@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
-
-
+@font-face {
+  font-family: hightide;
+  src: url(./Font/hightide/HighTide.otf);
+}
 
 html {
   scroll-behavior: smooth;
@@ -25,6 +27,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: "Orbitron", sans-serif;
+    font-family: "hightide",sans-serif;
     list-style: none;
     box-sizing: border-box;
     background: #000;
@@ -33,12 +36,14 @@ body {
   nav {
     position: fixed;
     z-index: 100;
-    height: 8vh;
-    width: 96%;
+    height: 10vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
   }
   
    h1, h2, h5, p, span {
@@ -146,10 +151,16 @@ body {
     z-index: 2;
     font-size: 5vw;
     letter-spacing: 20px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'hightide', sans-serif;
+      background: -webkit-linear-gradient( #ebdcae,#eee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
   }
 
-  
+  h1{
+    font-family: 'hightide',sans-serif;
+  }
   
   .earth img {
     width: 400px;
@@ -231,6 +242,8 @@ body {
 
   section img#moon {
     mix-blend-mode: screen;
+    filter: hue-rotate(180deg);
+    opacity:70%;
   }
 
   section img#mountains-front  {
@@ -240,15 +253,18 @@ body {
   #text2 {
     position: absolute;
     right: 80px;
-    color: #fff;
     white-space: nowrap;
     font-size: 4.5vw;
     letter-spacing: 5px;
-    font-family: "Orbitron", sans-serif !important;
+    font-family: "hightide", sans-serif !important;
     z-index: 9;
     
   }
-
+  h2{
+    background: -webkit-linear-gradient( #ebdcae,#eee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
   #mountains-behind, #mountains-front {
     filter: brightness(0.3) ;
     
@@ -696,7 +712,9 @@ body {
 .card {
   padding-top: 100px;
   transform-style: preserve-3d;
-  background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  /* background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background-image: url("./images/Mr\ &\ MRS\ CRCE.png");
+  
   background-position: center center;
   width: 100%;
   transition: all 0.5s ease-in-out;
