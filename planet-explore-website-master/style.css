@@ -3,6 +3,10 @@
   font-family: hightide;
   src: url(./Font/hightide/HighTide.otf);
 }
+@font-face {
+  font-family: baron;
+  src: url(./Font/BaronNeue_Personal_license/Baron.otf);
+}
 
 html {
   scroll-behavior: smooth;
@@ -26,7 +30,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: "Orbitron", sans-serif;
+    /* font-family: "Orbitron", sans-serif; */
     font-family: "hightide",sans-serif;
     list-style: none;
     box-sizing: border-box;
@@ -73,7 +77,8 @@ body {
   
   nav .nav-links ul li img {
     transform: scale(0.45);
-    cursor: not-allowed;
+    cursor: pointer;
+    
   }
 
   .swipe-icon {
@@ -101,13 +106,13 @@ body {
     bottom: 70px;    
     text-align: center;
     z-index: 1;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'baron', sans-serif;
   }
 
   
   
   section {
-    height: vh;
+    height: 100vh;
     width: 100vw;
     overflow: hidden;
 
@@ -162,7 +167,7 @@ body {
   }
 
   h1{
-    font-family: 'hightide',sans-serif;
+    font-family: "baron",sans-serif;
   }
   
   .earth img {
@@ -278,7 +283,7 @@ body {
 
   /* PLANET SECTION */
 
-  .container {
+  .container1 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -558,12 +563,14 @@ footer {
 .footer-list ul {
   display: flex;
   padding-right: 32px;
-  cursor: not-allowed;
+  
   
 }
 
 .footer-list img {
   width: 20px;
+  cursor: pointer;
+  /* filter: hue-rotate(180sdeg); */
 }
 
 
@@ -615,7 +622,7 @@ footer {
     bottom: 70px;    
     text-align: center;
     z-index: 1;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'baron', sans-serif;
   }
 
   .fore img {
@@ -654,7 +661,7 @@ footer {
   
   #text2 {
     position: absolute;
-    right: -50px;
+    right: -120px;
   }
 
   nav .nav-links ul {
@@ -821,9 +828,54 @@ body {
 }
 
    
+.section-header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section-header h2 {
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  color: #ffffff;
+  font-family: 'baron',sans-serif;
+  margin-bottom: 20px;
+}
+
+.section-header h2:before,
+.section-header h2:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #ebdcae;
+  display: inline-block;
+}
+
+.section-header h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.section-header h2:after {
+  margin: 0 0 10px 15px;
+}
+
+.section-header p {
+  margin: 10px auto 0 auto;
+  font-family: 'baron',sans-serif;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-header p {
+    max-width: 60%;
+  }
+}
 
   
-
+@media screen and (max-width: 320px) {
+  .section-header h2{
+    font-size: 35px;
+  }
+}
 
   
 
