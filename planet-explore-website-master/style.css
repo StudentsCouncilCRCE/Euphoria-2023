@@ -176,8 +176,9 @@ body {
   }
   
   .mid {
-    left: -150px !important;
-    bottom: -100px !important;
+    right:0px !important;
+    left: 0px !important;
+    bottom: 0px !important;
     top: unset !important;
   }
   
