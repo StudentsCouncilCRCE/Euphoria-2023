@@ -17,10 +17,10 @@ let parallaxInstance = new Parallax(scene)
   window.addEventListener('scroll', function(){
     let value = window.scrollY;
     stars.style.left = value * 0.25 + 'px';
-    moon.style.top = value * 0.30 + 'px';
+    moon.style.top = value * 0.25 + 'px';
     //mountains_behind.style.top = value * 0 + 'px';
     //mountains_front.style.top = value * 0 + 'px';
-    text2.style.marginRight = value * 0.5 + 'px';
+    text2.style.marginRight = value * 0.25 + 'px';
     //text2.style.marginTop = value * 0.2 + 'px';
   })
 
