@@ -900,17 +900,77 @@ main {
   margin-top:20px;
   gap: 50px;
 }
-.carde:first-child {
+.carde1 {
   background: url(./images/9.png);
   background-size: 100%;
   background-position: center;
 }
-.carde:nth-child(2) {
+.carde2 {
   background: url(./images/Rhythmic\ Rhapsody.png);
   background-size: 100%;
   background-position: center;
 }
-.carde:last-child {
+.carde3 {
+  background: url(./images/Tamasha\ LA.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde4 {
+  background: url(./images/Adaalat\ LA.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde5 {
+  background: url(./images/Be\ Reel.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde6 {
+  background: url(./images/Joke\ Jamboree.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde7 {
+  background: url(./images/On\ the\ Floor.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde8 {
+  background: url(./images/Sangeet\ Safar.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde9 {
+  background: url(./images/Sell\ Me\ This\ Pen.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde10 {
+  background: url(./images/Stories\ in\ Snaps.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde11{
+  background: url(./images/Tamasha\ LA.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde12 {
+  background: url(./images/Tamasha\ LA.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde13 {
+  background: url(./images/Tamasha\ LA.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde14{
+  background: url(./images/Tamasha\ LA.png);
+  background-size: 100%;
+  background-position: center;
+}
+.carde15 {
   background: url(./images/Tamasha\ LA.png);
   background-size: 100%;
   background-position: center;
@@ -925,20 +985,20 @@ main {
   overflow: hidden;
   border-radius: calc(var(--card-height)*.05);
 }
-.carde:first-child:hover {
+.carde:hover {
   background-position: 0px 0px;
   background-size: calc(var(--card-height)*1.5);
 }
 
-.carde:nth-child(2):hover {
+/* .carde:nth-child(2):hover {
   background-position: 0px 0px;
   background-size: calc(var(--card-height)*1.5);
 }
 
 .carde:last-child:hover {
   background-position: 0px 0px;
-  background-size: calc(var(--card-height)*1.25);
-}
+  background-size: calc(var(--card-height)*1.5);
+} */
 
 .wrapper {
   background-color: #00000000;
@@ -1222,4 +1282,46 @@ i.fa{
 i.fa:hover{
   transform:translateY(-10px);
   transition: all ease-in-out 0.2s;
+}
+
+button{
+  background-color: #ebdcae;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  padding-bottom: -5px;
+  border: 0px;
+  margin-right: -5px;
+}
+button:hover{
+  background-color: #ead495;
+}
+
+@media screen and (max-width: 420px)
+{
+  button{
+    margin-right: -30px;
+  }
+}
+
+.links i{
+  font-size: 50px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ebdcae;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e8ce80;
 }
