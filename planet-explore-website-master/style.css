@@ -111,13 +111,18 @@ body {
 
   
   
-  /* section {
+  #sectionone {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 
 
-  } */
+  }
+  #second{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
 
   section::before {
     content: '';
@@ -1079,7 +1084,7 @@ main {
  
 @media screen and (max-width: 420px) {
   .section-header h2{
-    font-size: 20px;
+    font-size: 30px;
   }
   .section-header p{
     font-size: 15px;
