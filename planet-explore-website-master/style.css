@@ -689,7 +689,7 @@ footer {
   }
 
   nav  {
-    width: 92%;
+    width: 100%;
   }
 
   .copyright {
@@ -763,7 +763,8 @@ body {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.811);
   border-radius: 0px 0px 10px 10px;
-  box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+  /* box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px; */
+  box-shadow: #ebdcae 0px 20px 50px -25px;
   transition: all 0.5s ease-in-out;
   padding: 50px 25px 25px 25px;
   transform-style: preserve-3d;
@@ -834,12 +835,12 @@ body {
 }
 
 .card2 {
-  background-image: url(./images/Impulse.png);
+  background-image: url(./images/Euphoria\ Event\ Posters\ \(1\)-min.png);
   
 }
 
 .card3 {
-  background-image: url(./images/Euphoria\ Event\ Posters\ \(1\)-min.png);
+  background-image: url(./images/Impulse.png);
 }
 
 .card4 {
@@ -918,17 +919,17 @@ main {
   gap: 50px;
 }
 .carde1 {
-  background: url(./images/fittest.png);
+  background: url(./images/fittest.webp);
   background-size: 100%;
   background-position: center;
 }
 .carde2 {
-  background: url(./images/3-min.png);
+  background: url(./images/3-min.webp);
   background-size: 100%;
   background-position: center;
 }
 .carde3 {
-  background: url(./images/4\ \(3\)-min.png);
+  background: url(./images/4\ \(3\)-min.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -953,7 +954,7 @@ main {
   background-position: center;
 }
 .carde8 {
-  background: url(./images/Adaalat\ LA.png);
+  background: url(./images/aadalat.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -973,7 +974,7 @@ main {
   background-position: center;
 }
 .carde12 {
-  background: url(./images/Be\ Reel.png);
+  background: url(./images/Be\ Reel.webp);
   background-size: 100%;
   background-position: center;
 }
@@ -983,22 +984,22 @@ main {
   background-position: center;
 }
 .carde14{
-  background: url(./images/1\ \(1\)-min.png);
+  background: url(./images/1\ \(1\)-min.webp);
   background-size: 100%;
   background-position: center;
 }
 .carde15 {
-  background: url(./images/2\ \(1\)-min.png);
+  background: url(./images/2\ \(1\)-min.webp);
   background-size: 100%;
   background-position: center;
 }
 .carde16{
-  background: url(./images/5\ \(1\)-min.png);
+  background: url(./images/5\ \(1\)-min.webp);
   background-size: 100%;
   background-position: center;
 }
 .carde17 {
-  background: url(./images/Tamasha\ LA.png);
+  background: url(./images/Tamasha\ LA.w);
   background-size: 100%;
   background-position: center;
 }
@@ -1047,7 +1048,7 @@ main {
   height: calc(var(--card-height)*.3);
   transition: 500ms ease-in-out;
   bottom: -100%;
-  left: -50%;
+  left: -6%;
   -webkit-filter: grayscale(0%); 
   filter: grayscale(0%);
 }
@@ -1071,13 +1072,15 @@ main {
 }
 .links a i {
   margin: 5px;
-  color: #ffffffb7;
+  color: #ebdcae;
+  margin-right: 16px;
+  margin-bottom: 30px;
 }
 .carde:hover .links {
   right: 20%;
 }
 .carde:hover .links a i{
-  filter: drop-shadow(0px 0px 5px #83bdffd4) ;
+  filter: drop-shadow(0px 0px 5px #ebdcae) ;
 
 }
 
@@ -1102,7 +1105,7 @@ main {
 .footer {
   font-size: 14px;
   background-color: black;
-  /* padding: 50px 0; */
+  padding: 30px 0;
   color: white;
   margin-bottom: -88%;
 }
@@ -1351,4 +1354,55 @@ button:hover{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #e8ce80;
+}
+
+.tooltip .tooltiptext {
+  margin-left: -35px;
+  visibility: hidden !important;
+  width: 120px !important;
+  font-size: 20px;
+  color: black !important;
+  text-align: center !important;
+  padding: 5px 0 !important;
+  border-radius: 6px !important;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute !important;
+  z-index: 999 !important;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+   visibility: visible !important;
+}
+
+
+.red{
+  color: red!important;
+
+}
+.redbox{
+  box-shadow: red 0px 20px 50px -25px!important;
+}
+
+.blue{
+  color: blue !important;
+}
+
+.bluebox{
+  box-shadow: blue  0px 20px 50px -25px!important;
+}
+.green{
+  color: green !important;
+}
+
+.greenbox{
+  box-shadow: green  0px 20px 50px -25px!important;
+}
+.yellow{
+  color: yellow !important;
+}
+
+.yellowbox{
+  box-shadow: yellow  0px 20px 50px -25px!important;
 }
