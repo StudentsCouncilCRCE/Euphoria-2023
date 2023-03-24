@@ -17,13 +17,18 @@ a {
 }
 
 #preloader {
-  background: #040204 url(./images/moon\ pre.gif) no-repeat center;
-  background-size: 100%;
+  background: #040204 url(./images/mooni.gif) no-repeat center;
+  background-size: 30%;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   z-index: 101;
-  
+}
+
+@media screen and (max-width:420px) {
+  #preloader{
+    background: url(./images/mooner.gif);
+  }
 }
 
 
